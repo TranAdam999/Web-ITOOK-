@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giỏ hàng – Book Deal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giỏ hàng sách trên Book Deal">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- PAGE LOADER -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-inner">
+            <div class="loader-top">
+                <span class="loader-brand">BOOK DEAL</span>
+                <span id="loader-percent" class="loader-percent">0%</span>
+            </div>
+            <div id="loader-progress" class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND ORBS (DECORATION) -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  <!-- BACKGROUND ORBS -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <!-- TOP STRIP -->
+  <div class="top-strip fade-down">
+    <div class="top-strip-inner">
+      <div class="top-strip-left">
+        <span class="currency-pill">VNĐ</span>
+        <span class="top-strip-text">Book Deal – Giỏ hàng của bạn</span>
+      </div>
+      <div class="top-strip-right">
+        <a href="#">Trợ giúp</a>
+        <a href="#">Theo dõi đơn hàng</a>
+        <a href="#">Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header glass-header fade-down">
+    <div class="header-inner">
+      <a href="index.html" class="logo-text">
+        <span class="logo-icon">📚</span>
+        <span class="logo-word">BOOK DEAL</span>
+      </a>
+
+      <div class="search-area">
+        <div class="search-inner">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Tìm kiếm sách, tác giả, thể loại...">
+        </div>
+        <button type="button" class="btn btn-search">
+          Tìm
+        </button>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-badge">
+          <span class="icon">👤</span>
+          <span class="label">Tài khoản</span>
+        </button>
+        <button class="icon-badge">
+          <span class="icon">❤️</span>
+          <span class="label">Yêu thích</span>
+        </button>
+        <button class="icon-badge icon-badge-cart">
+          <span class="icon">🛒</span>
+          <span class="label">Giỏ hàng</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-menu">
+      <button class="menu-link" onclick="window.location.href='index.html'">← Tiếp tục mua sắm</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="content">
+    <section class="section">
+      <div class="cart-wrapper">
+        <div class="cart-header-row">
+          <h1>Giỏ hàng</h1>
+          <p class="cart-subtitle">Danh sách sách bạn đã chọn</p>
+        </div>
+        <div id="cart-content">
+          Đang tải giỏ hàng...
+        </div>
+        <!-- PAYMENT METHODS BOX -->
+<div class="payment-box">
+    <h3>Phương thức thanh toán</h3>
+
+    <div class="payment-methods">
+
+        <label class="payment-option">
+            <input type="radio" name="payment" checked>
+            <img src="icons/visa.png" alt="Visa">
+            <span>Thẻ Visa</span>
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment">
+            <img src="icons/mastercard.png" alt="Mastercard">
+            <span>Mastercard</span>
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment">
+            <img src="icons/momo.png" alt="Momo">
+            <span>MoMo</span>
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment">
+            <img src="icons/zalopay.png" alt="ZaloPay">
+            <span>ZaloPay</span>
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment">
+            <img src="icons/vnpay.png" alt="VNPAY">
+            <span>VNPay</span>
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment">
+            <img src="icons/cod.png" alt="COD">
+            <span>Thanh toán khi nhận hàng</span>
+        </label>
+
+    </div>
+
+    <button class="checkout-btn">Thanh toán ngay</button>
+</div>
+
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
+    ↑
+  </button>
+
+  <script src="loader.js"></script>
+  <script src="books.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

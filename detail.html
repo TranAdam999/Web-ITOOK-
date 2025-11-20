@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết sách – Book Deal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chi tiết sách, giá bán và mô tả truyện trên Book Deal.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND ORBS (reuse background cho đồng bộ) -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+ <!-- PAGE LOADER -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-inner">
+            <div class="loader-top">
+                <span class="loader-brand">BOOK DEAL</span>
+                <span id="loader-percent" class="loader-percent">0%</span>
+            </div>
+            <div id="loader-progress" class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND ORBS (DECORATION) -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+    <!-- TOP STRIP -->
+    <div class="top-strip fade-down">
+        <div class="top-strip-inner">
+            <div class="top-strip-left">
+                <span class="currency-pill">VNĐ</span>
+                <span class="top-strip-text">Book Deal – Săn sách giá tốt mỗi ngày</span>
+            </div>
+            <div class="top-strip-right">
+                <a href="#">Trợ giúp</a>
+                <a href="#">Theo dõi đơn hàng</a>
+                <a href="#">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header glass-header fade-down">
+        <div class="header-inner">
+            <a href="index.html" class="logo-text">
+                <span class="logo-icon">📚</span>
+                <span class="logo-word">BOOK DEAL</span>
+            </a>
+
+            <div class="search-area">
+                <div class="search-inner">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Tìm kiếm sách, tác giả, thể loại...">
+                </div>
+                <button id="search-btn" type="button" class="btn btn-search">
+                    Tìm
+                </button>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-badge">
+                    <span class="icon">👤</span>
+                    <span class="label">Tài khoản</span>
+                </button>
+                <button class="icon-badge">
+                    <span class="icon">❤️</span>
+                    <span class="label">Yêu thích</span>
+                </button>
+                <button class="icon-badge icon-badge-cart">
+                    <span class="icon">🛒</span>
+                    <span class="label">Giỏ hàng</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="main-menu">
+            <button class="menu-link" onclick="window.location.href='index.html'">← Trang chủ</button>
+            <button class="menu-link" data-filter="fiction">Fiction</button>
+            <button class="menu-link" data-filter="nonfiction">Nonfiction</button>
+            <button class="menu-link" data-filter="kids">Kids</button>
+            <button class="menu-link" data-filter="ya">Young Adult</button>
+            <button class="menu-link menu-link-pill" data-filter="sale">
+                🔥 Sale
+            </button>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+    <section class="section">
+        <!-- Khối trên: Ảnh + thông tin -->
+        <div id="detail-wrapper" class="detail-wrapper">
+            <!-- detail.js sẽ đổ nội dung -->
+            <p>Đang tải chi tiết sách...</p>
+        </div>
+
+        <!-- Khối dưới: About full width -->
+        <div id="detail-about" class="detail-about">
+            <!-- detail.js sẽ đổ About vào đây -->
+        </div>
+    </section>
+</main>
+<!-- FOOTER (mới thêm) -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="newsletter">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận ưu đãi và sách mới mỗi tuần.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Về Book Deal</h4>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Điều khoản</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div>
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Hỏi đáp</a>
+                    <a href="#">Liên hệ</a>
+                    <a href="#">Hỗ trợ khách hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thanh dưới cùng -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <a href="#">Chính sách</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+            <div class="footer-bottom-middle">
+                © 2025 Hồng Phúc 25127120. All rights reserved.
+            </div>
+            <div class="footer-bottom-right">
+
+    <a href="#" aria-label="Facebook">
+        <img src="images/facebook.png" alt="Facebook" class="footer-icon">
+    </a>
+
+    <a href="#" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram" class="footer-icon">
+    </a>
+
+    <a href="#" aria-label="TikTok">
+        <img src="images/tiktok2.jpg" alt="TikTok" class="footer-icon">
+    </a>
+
+    <a href="#" aria-label="YouTube">
+        <img src="images/youtube.png" alt="YouTube" class="footer-icon">
+    </a>
+
+</div>
+
+
+            
+        </div>
+    </footer>
+
+    <!-- FLOATING BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
+        ↑
+    </button>
+
+    <!-- JS -->
+     <script src="loader.js"></script>
+    <script src="books.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
